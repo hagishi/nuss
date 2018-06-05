@@ -11,7 +11,7 @@
     "generate": "nuxt generate",
     "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build",
     "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate",
-    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+    "deploy": "node deploy.js"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.0.0",
@@ -21,6 +21,7 @@
   "devDependencies": {
     "@types/axios": "^0.14.0",
     "cross-env": "^5.0.1",
+    "gh-pages": "^1.2.0",
     "push-dir": "^0.4.1"
   }
 }
